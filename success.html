@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Gym Template">
+    <meta name="keywords" content="Gym, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Payment Successful | GoFit</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/barfiller.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/auth.js"></script>
+
+    <style>
+        .success-section {
+            padding: 100px 0;
+            background: #151515;
+            text-align: center;
+            color: #fff;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .success-content {
+            background: #1e1e1e;
+            padding: 50px;
+            border-radius: 10px;
+            border: 1px solid #333;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .success-icon {
+            font-size: 80px;
+            color: #f36100;
+            margin-bottom: 30px;
+        }
+
+        .success-content h2 {
+            color: #fff;
+            font-size: 36px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .success-content p {
+            color: #c4c4c4;
+            font-size: 16px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .btn-group-custom {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .primary-btn {
+            background: #f36100;
+            color: #ffffff;
+            padding: 14px 35px;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            letter-spacing: 2px;
+        }
+
+        .secondary-btn {
+            background: transparent;
+            color: #fff;
+            padding: 14px 35px;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: 1px solid #333;
+            cursor: pointer;
+            letter-spacing: 2px;
+        }
+
+        .secondary-btn:hover {
+            border-color: #f36100;
+            color: #f36100;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Offcanvas Menu Section Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="canvas-close">
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="canvas-search search-switch">
+            <i class="fa fa-search"></i>
+        </div>
+        <nav class="canvas-menu mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fitness_plans.html">Fitness Plan</a></li>
+                <li><a href="timetable.html">Class Timetable</a></li>
+                <li><a href="supplements.php">Shop With Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.php" class="user-login">Login</a></li>
+                <li><a href="logout.php" style="display: none;">Logout</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="canvas-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    <!-- Offcanvas Menu Section End -->
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="nav-menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="fitness_plans.html">Fitness Plan</a></li>
+                            <li><a href="timetable.html">Class Timetable</a></li>
+                            <li><a href="supplements.php">Shop With Us</a>
+                                <ul class="dropdown">
+                                    <li><a href="supplements.php">Supplements & Protein</a></li>
+                                    <li><a href="merchandise.php">Merchandise</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="top-option">
+                        <div class="to-social">
+                            <a href="cart.html" style="position: relative; margin-right: 15px;">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span id="cart-count"
+                                    style="display: none; position: absolute; top: -8px; right: -10px; background: #f36100; color: #fff; font-size: 10px; padding: 2px 5px; border-radius: 50%;">0</span>
+                            </a>
+                            <a href="customer.php" class="user-login"><i class="fa fa-user"></i></a>
+                            <a href="logout.php" style="margin-left: 15px; color: #fff;"><i
+                                    class="fa fa-sign-out"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas-open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Success Section Begin -->
+    <section class="success-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="success-content">
+                        <div class="success-icon">
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                        <h2>Payment Successful!</h2>
+                        <p>Thank you for your purchase. Your order has been placed successfully.<br>We have sent a
+                            confirmation email to your registered address.</p>
+                        <div class="btn-group-custom">
+                            <a href="index.html" class="secondary-btn">Back to Home</a>
+                            <button id="downloadInvoice" class="primary-btn">Download Invoice</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Success Section End -->
+
+    <!-- Hidden Invoice Template -->
+    <div id="invoice-template" style="display: none;">
+        <div style="padding: 40px; font-family: 'Muli', sans-serif; color: #333; background: #fff;">
+            <div
+                style="display: flex; justify-content: space-between; border-bottom: 2px solid #f36100; padding-bottom: 20px; margin-bottom: 30px;">
+                <div>
+                    <h1 style="color: #f36100; margin: 0; font-family: 'Oswald', sans-serif;">GOFIT</h1>
+                    <p style="margin: 5px 0 0 0; font-size: 14px;">Your Ultimate Fitness Partner</p>
+                </div>
+                <div style="text-align: right;">
+                    <h2 style="margin: 0; font-size: 20px;">INVOICE</h2>
+                    <p style="margin: 5px 0 0 0; font-size: 14px;">Order ID: #<span id="inv-order-id"></span></p>
+                    <p style="margin: 5px 0 0 0; font-size: 14px;">Date: <span id="inv-date"></span></p>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; margin-bottom: 40px;">
+                <div>
+                    <h4
+                        style="margin: 0 0 10px 0; font-size: 16px; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
+                        Billing To:</h4>
+                    <p style="margin: 5px 0; font-weight: 700;" id="inv-name"></p>
+                    <p style="margin: 5px 0;" id="inv-address"></p>
+                    <p style="margin: 5px 0;" id="inv-town"></p>
+                    <p style="margin: 5px 0;" id="inv-email"></p>
+                    <p style="margin: 5px 0;" id="inv-phone"></p>
+                </div>
+                <div style="text-align: right;">
+                    <h4
+                        style="margin: 0 0 10px 0; font-size: 16px; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
+                        Payment Method:</h4>
+                    <p style="margin: 5px 0;" id="inv-payment-method"></p>
+                    <p style="margin: 5px 0;" id="inv-status">Status: Paid</p>
+                </div>
+            </div>
+
+            <table style="width: 100%; border-collapse: collapse; margin-bottom: 40px;">
+                <thead>
+                    <tr style="background: #f8f8f8;">
+                        <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Item Description</th>
+                        <th style="padding: 12px; border: 1px solid #ddd; text-align: center;">Price</th>
+                        <th style="padding: 12px; border: 1px solid #ddd; text-align: center;">Qty</th>
+                        <th style="padding: 12px; border: 1px solid #ddd; text-align: right;">Total</th>
+                    </tr>
+                </thead>
+                <tbody id="inv-items">
+                    <!-- Items will be populated here -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"
+                            style="padding: 12px; border: 1px solid #ddd; text-align: right; font-weight: 700;">Subtotal
+                        </td>
+                        <td style="padding: 12px; border: 1px solid #ddd; text-align: right;" id="inv-subtotal"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"
+                            style="padding: 12px; border: 1px solid #ddd; text-align: right; font-weight: 700;">Shipping
+                        </td>
+                        <td style="padding: 12px; border: 1px solid #ddd; text-align: right;" id="inv-shipping">RM 15.00
+                        </td>
+                    </tr>
+                    <tr style="background: #f36100; color: #fff;">
+                        <td colspan="3"
+                            style="padding: 12px; border: 1px solid #ddd; text-align: right; font-weight: 700;">Total
+                            Amount</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; text-align: right; font-weight: 700; font-size: 18px;"
+                            id="inv-total"></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <div
+                style="text-align: center; color: #777; font-size: 12px; margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px;">
+                <p>Thank you for choosing GoFit. We appreciate your business!</p>
+                <p>For any queries, please contact us at support@gofit.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>&copy;
+                        <script>document.write(new Date().getFullYear());</script> GoFit. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.barfiller.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+
+    <!-- HTML2PDF Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlOrderId = urlParams.get('order_id');
+            const lastOrder = JSON.parse(localStorage.getItem('gofit_last_order'));
+
+            const renderInvoice = (data) => {
+                // Populate the hidden template
+                document.getElementById('inv-order-id').innerText = data.order_id;
+                document.getElementById('inv-date').innerText = data.date;
+                document.getElementById('inv-name').innerText = `${data.billing.first} ${data.billing.last}`;
+                document.getElementById('inv-address').innerText = data.billing.address;
+                document.getElementById('inv-town').innerText = data.billing.town;
+                document.getElementById('inv-email').innerText = data.billing.email;
+                document.getElementById('inv-phone').innerText = data.billing.phone;
+                document.getElementById('inv-payment-method').innerText = data.payment_method || 'Cash on Delivery';
+
+                if (data.payment_method === 'Cash on Delivery') {
+                    document.getElementById('inv-status').innerText = 'Status: Pending';
+                } else {
+                    document.getElementById('inv-status').innerText = 'Status: Paid';
+                }
+
+                const itemsContainer = document.getElementById('inv-items');
+                itemsContainer.innerHTML = '';
+                let subtotal = 0;
+                data.items.forEach(item => {
+                    const price = parseFloat(item.price || item.unit_price || 0);
+                    const qty = parseInt(item.quantity || 1);
+                    const itemTotal = price * qty;
+                    subtotal += itemTotal;
+
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td style="padding: 12px; border: 1px solid #ddd;">${item.name || item.product_name} ${item.size ? '(' + item.size + ')' : ''}</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">RM ${price.toFixed(2)}</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">${qty}</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; text-align: right;">RM ${itemTotal.toFixed(2)}</td>
+                    `;
+                    itemsContainer.appendChild(tr);
+                });
+
+                const shipping = 15;
+                const total = subtotal + shipping;
+
+                document.getElementById('inv-subtotal').innerText = `RM ${subtotal.toFixed(2)}`;
+                document.getElementById('inv-shipping').innerText = `RM ${shipping.toFixed(2)}`;
+                document.getElementById('inv-total').innerText = `RM ${total.toFixed(2)}`;
+
+                // Download Logic
+                document.getElementById('downloadInvoice').addEventListener('click', () => {
+                    const element = document.getElementById('invoice-template');
+                    element.style.display = 'block';
+
+                    const opt = {
+                        margin: [0.5, 0.5, 0.5, 0.5],
+                        filename: `GoFit_Invoice_${data.order_id}.pdf`,
+                        image: { type: 'jpeg', quality: 0.98 },
+                        html2canvas: { scale: 2, useCORS: true },
+                        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+                    };
+
+                    html2pdf().set(opt).from(element).toPdf().get('pdf').then(function (pdf) {
+                        const blobUrl = pdf.output('bloburl');
+                        window.open(blobUrl, '_blank');
+                        pdf.save(`GoFit_Invoice_${data.order_id}.pdf`);
+                        element.style.display = 'none';
+                    });
+                });
+            };
+
+            // CASE 1: Data in localStorage matches URL
+            if (lastOrder && urlOrderId == lastOrder.order_id) {
+                renderInvoice(lastOrder);
+            }
+            // CASE 2: No localStorage or mismatch, but order_id in URL - Fetch from API
+            else if (urlOrderId) {
+                fetch(`api/get_order_details.php?order_id=${urlOrderId}`)
+                    .then(res => res.json())
+                    .then(response => {
+                        if (response.success) {
+                            renderInvoice(response.order ? { ...response.order, items: response.items } : null);
+                        } else {
+                            document.getElementById('downloadInvoice').disabled = true;
+                            alert("Could not load invoice data: " + response.message);
+                        }
+                    })
+                    .catch(err => {
+                        console.error(err);
+                        alert("Network Error loading invoice.");
+                    });
+            }
+            // CASE 3: No ID at all
+            else {
+                document.getElementById('downloadInvoice').disabled = true;
+                document.getElementById('downloadInvoice').style.opacity = '0.5';
+            }
+        });
+    </script>
+</body>
+
+</html>

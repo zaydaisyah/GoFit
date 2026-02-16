@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Gym Template">
+    <meta name="keywords" content="Gym, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Booking | GoFit</title>
+    <meta name="description" content="GoFit Gym: Fitness plans, class booking, progress tracking, and fitness shop">
+    <meta name="keywords" content="GoFit, gym, fitness, workout, classes, supplements, merchandise">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/barfiller.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/auth.js"></script>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Section Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="canvas-close">
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="canvas-search search-switch">
+            <i class="fa fa-search"></i>
+        </div>
+        <nav class="canvas-menu mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Fitness Plan</a>
+                    <ul class="dropdown">
+                        <li><a href="fitness_plans.html">Fitness Plans</a></li>
+                        <li><a href="classes-booking.html">Book Class</a></li>
+                    </ul>
+                </li>
+                <li><a href="timetable.html">Class Timetable</a>
+                </li>
+                <li><a href="#">Shop With Us</a>
+                    <ul class="dropdown">
+                        <li><a href="supplements.php">Supplements & Protein</a></li>
+                        <li><a href="merchandise.php">Merchandise</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="canvas-social">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    <!-- Offcanvas Menu Section End -->
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="nav-menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active"><a href="fitness_plans.html">Fitness Plan</a>
+                                <ul class="dropdown">
+                                    <li><a href="fitness_plans.html">Fitness Plans</a></li>
+                                    <li class="active"><a href="booking.html">Book a Class</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="timetable.html">Class Timetable</a>
+                            </li>
+                            <li><a href="supplements.php">Shop With Us</a>
+                                <ul class="dropdown">
+                                    <li><a href="supplements.php">Supplements & Protein</a></li>
+                                    <li><a href="merchandise.php">Merchandise</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class="col-lg-3">
+                    <div class="top-option">
+                        <div class="to-search search-switch">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <div class="to-social">
+                            <a href="cart.html" style="position: relative; margin-right: 15px;">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span id="cart-count"
+                                    style="display: none; position: absolute; top: -8px; right: -10px; background: #f36100; color: #fff; font-size: 10px; padding: 2px 5px; border-radius: 50%;">0</span>
+                            </a>
+                            <a href="customer.php" class="user-login"><i class="fa fa-user"></i></a>
+                            <a href="logout.php" style="margin-left: 15px; color: #fff;"><i
+                                    class="fa fa-sign-out"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas-open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="img/headers/booking_v2.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb-text">
+                        <h2>Book A Class</h2>
+                        <div class="bt-option">
+                            <a href="./index.html">Home</a>
+                            <span>Booking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Booking Section Begin -->
+    <section class="booking-section spad">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar: Class Preview -->
+                <div class="col-lg-4">
+                    <div class="classes-preview-sidebar">
+                        <div class="section-title">
+                            <span>Schedule</span>
+                            <h2>Upcoming</h2>
+                        </div>
+                        <div class="preview-card">
+                            <div class="pc-item">
+                                <h5>Body Building</h5>
+                                <span>Mon, Wed, Fri | 09:00 AM</span>
+                                <p>High intensity strength training.</p>
+                            </div>
+                            <div class="pc-item">
+                                <h5>Yoga & Stretching</h5>
+                                <span>Tue, Thu | 07:00 AM</span>
+                                <p>Relax and improve flexibility.</p>
+                            </div>
+                            <div class="pc-item">
+                                <h5>Cardio Blast</h5>
+                                <span>Sat, Sun | 10:00 AM</span>
+                                <p>Burn calories fast.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Form -->
+                <div class="col-lg-8">
+                    <div class="booking-form-container">
+                        <div class="section-title">
+                            <span>Join Us</span>
+                            <h2>Book Your Spot</h2>
+                        </div>
+                        <form action="#" class="booking-form" id="bookingForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Full Name</label>
+                                        <div class="input-with-icon">
+                                            <input type="text" placeholder="John Doe" required>
+                                            <i class="fa fa-user"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Email Address</label>
+                                        <div class="input-with-icon">
+                                            <input type="email" placeholder="john@example.com" required>
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Phone Number</label>
+                                        <div class="input-with-icon">
+                                            <input type="text" placeholder="012-345 6789" required>
+                                            <i class="fa fa-mobile" style="font-size:20px;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Select Class</label>
+                                        <div class="input-with-icon">
+                                            <select class="form-control" required
+                                                style="background:#1e1e1e; color:#fff; border:1px solid #333; height:50px;">
+                                                <option value="" disabled selected>Choose a class...</option>
+                                                <option value="bodybuilding">Body Building</option>
+                                                <option value="yoga">Yoga & Stretching</option>
+                                                <option value="cardio">Cardio Blast</option>
+                                                <option value="boxing">Boxing</option>
+                                            </select>
+                                            <i class="fa fa-caret-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Date</label>
+                                        <div class="input-with-icon">
+                                            <input type="date" required>
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Time Slot</label>
+                                        <div class="input-with-icon">
+                                            <select class="form-control" required
+                                                style="background:#1e1e1e; color:#fff; border:1px solid #333; height:50px;">
+                                                <option value="" disabled selected>Select preferred time...</option>
+                                                <option value="07:00">07:00 AM</option>
+                                                <option value="09:00">09:00 AM</option>
+                                                <option value="12:00">12:00 PM</option>
+                                                <option value="17:00">05:00 PM</option>
+                                                <option value="19:00">07:00 PM</option>
+                                            </select>
+                                            <i class="fa fa-clock-o"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="form-label">Preferred Personal Trainer</label>
+                                        <div class="input-with-icon">
+                                            <select class="form-control" name="trainer" required
+                                                style="background:#1e1e1e; color:#fff; border:1px solid #333; height:50px;">
+                                                <option value="" disabled selected>Select a trainer...</option>
+                                                <option value="jordan">Jordan Yeoh</option>
+                                                <option value="nana">Nana Al Haleq</option>
+                                                <option value="terrence">Terrence Teo</option>
+                                                <option value="hanif">Hanif Loid</option>
+                                                <option value="rachel">Athart Rachel</option>
+                                            </select>
+                                            <i class="fa fa-users"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label class="form-label">Additional Notes</label>
+                                        <textarea placeholder="Tell us about any specific goals or health concerns..."
+                                            class="form-control" rows="4" name="notes"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="payment-options">
+                                        <h4>Payment Method</h4>
+                                        <div class="option-group">
+                                            <label class="radio-container">
+                                                Credit Card
+                                                <input type="radio" name="payment" checked>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="radio-container">
+                                                PayPal
+                                                <input type="radio" name="payment">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="radio-container">
+                                                Pay at Gym
+                                                <input type="radio" name="payment">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button type="submit" class="primary-btn" style="width:100%;">Confirm
+                                        Booking</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Booking Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <!-- Logo / About -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-about">
+                        <a href="index.html"><img src="img/logo.png" alt="GoFit Logo" style="max-width:120px;"></a>
+                        <p>Helping you stay fit, healthy, and confident with personalized training and support.</p>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-3 col-sm-6">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="fitness_plans.html">Fitness Plans</a></li>
+                        <li><a href="booking.html">Book Class</a></li>
+                        <li><a href="timetable.html">Class Timetable</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Shop & Policies -->
+                <div class="col-md-3 col-sm-6">
+                    <h4>Shop & Policies</h4>
+                    <ul>
+                        <li><a href="supplements.php">Supplements & Protein</a></li>
+                        <li><a href="merchandise.php">Merchandise</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="refund.html">Return & Refund Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-3 col-sm-6">
+                    <h4>Contact</h4>
+                    <p><a href="https://maps.google.com/maps?q=No.+20,+Jalan+51b/225,+Seksyen+51a,+46100+Petaling+Jaya,+Selangor"
+                            target="_blank" style="color: #c4c4c4;">No. 20, Jalan 51b/225, Seksyen 51a, 46100 Petaling
+                            Jaya, Selangor</a></p>
+                    <p>
+                        <a href="tel:01123456789" style="color: #c4c4c4;">011-23456789</a> |
+                        <a href="tel:01223456789" style="color: #c4c4c4;">012-23456789</a>
+                    </p>
+                    <p><a href="mailto:support.GoFit@gmail.com" style="color: #c4c4c4;">support.GoFit@gmail.com</a></p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p>&copy;
+                        <script>document.write(new Date().getFullYear());</script> GoFit. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+    <!-- Search model Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search model end -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.barfiller.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        // Redirect to success page on form submit
+        document.getElementById('bookingForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Simulate processing
+            const btn = this.querySelector('button[type="submit"]');
+            const originalText = btn.innerText;
+            btn.innerText = 'Processing...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                window.location.href = 'success.html';
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>
